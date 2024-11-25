@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Categories</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chivo:300,700|Playfair+Display:700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nova+Cut|Nova+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_index.css">
+    <link rel="stylesheet" href="css/merlin.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/categories.css">
+    <style>
+      body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+  
+      h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.5rem;
+        text-align: center;
+        color: #333;
+        margin: 20px 0;
+      }
+  
+      .category-section {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+      }
+  
+      .category-header {
+        font-family: 'Playfair Display', serif;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #555;
+        text-align: left;
+      }
+  
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+      }
+  
+      .card {
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+      }
+  
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+      }
+  
+      .card img {
+        width: 100%;
+        height: auto;
+      }
+  
+      .card-body {
+        padding: 15px;
+        text-align: center;
+      }
+  
+      .card-title {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+        color: #333;
+      }
+  
+      .card-price {
+        font-size: 1rem;
+        color: #666;
+      }
+  
+      .see-more {
+        text-align: center;
+        margin-top: 20px;
+      }
+  
+      .see-more button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+  
+      .see-more button:hover {
+        background-color: #d4af37;
+      }
+  
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">
+        <h3><a href="Priya.html" class="logo-name">Priya Fashion</a></h3>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="login.html" id="login">Login</a></li>
+      </ul>
+    </nav>
+  
+    <!-- Categories -->
+    <h1>Our Categories</h1>
+    <div class="category-section">
+      <!-- Women's Section -->
+      <div id="women-category">
+        <h2 class="category-header">Women's Clothing</h2>
+        <div class="product-grid">
+          <!-- Women Products -->
+          <div class="card" onclick="window.location.href='womens.html'">
+            <img src="https://i.etsystatic.com/22489341/r/il/5202da/3203911478/il_fullxfull.3203911478_pkgx.jpg" alt="AKS Kurta">
+            <div class="card-body">
+              <h3 class="card-title">AKS Kurta with Plazzo & Dupatta</h3>
+              <p class="card-price">Rs. 1799</p>
+            </div>
+          </div>
+          <div class="card" onclick="window.location.href='womens.html'">
+            <img src="https://i.etsystatic.com/21951778/r/il/a0cf08/2525682480/il_570xN.2525682480_5d49.jpg" alt="Nayo Solid Kurta">
+            <div class="card-body">
+              <h3 class="card-title">Nayo Women Solid Kurta with Trouser</h3>
+              <p class="card-price">Rs. 1649</p>
+            </div>
+          </div>
+          <div class="card" onclick="window.location.href='womens.html'">
+            <img src="https://th.bing.com/th/id/OIP.s_hplBlRtk8Qoz5Bn3PwjAHaJ4?rs=1&pid=ImgDetMain" alt="AKS Printed Kurta">
+            <div class="card-body">
+              <h3 class="card-title">AKS Printed Straight Kurta</h3>
+              <p class="card-price">Rs. 659</p>
+            </div>
+          </div>
+        </div>
+        <div class="see-more">
+          <button onclick="window.location.href='womens.html'">See More</button>
+        </div>
+      </div>
+  
+      <!-- Men's Section -->
+      <div id="men-category" style="margin-top: 40px;">
+        <h2 class="category-header">Men's Clothing</h2>
+        <div class="product-grid">
+          <!-- Men Products -->
+          <div class="card" onclick="window.location.href='mens.html'">
+            <img src="https://i.pinimg.com/originals/1d/9c/7c/1d9c7cabd6c224281283079fba05e577.jpg" alt="Shirt 1">
+            <div class="card-body">
+              <h3 class="card-title">Men's Shirt 1</h3>
+              <p class="card-price">Rs. 799</p>
+            </div>
+          </div>
+          <div class="card" onclick="window.location.href='mens.html'">
+            <img src="https://cdn.shopify.com/s/files/1/1650/5551/products/men-s-round-neck-plain-t-shirt-black-regular-fit-t-shirt-wolfattire-2549280768045_800x.jpg?v=1561009341" alt="Shirt 2">
+            <div class="card-body">
+              <h3 class="card-title">Men's Shirt 2</h3>
+              <p class="card-price">Rs. 899</p>
+            </div>
+          </div>
+          <div class="card" onclick="window.location.href='mens.html'">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2022/7/IB/ID/FI/22928381/new-product-500x500.jpeg" alt="Shirt 3">
+            <div class="card-body">
+              <h3 class="card-title">Men's Shirt 3</h3>
+              <p class="card-price">Rs. 799</p>
+            </div>
+          </div>
+        </div>
+        <div class="see-more">
+          <button onclick="window.location.href='mens.html'">See More</button>
+        </div>
+      </div>
+    </div>
+  
+    <script>
+      
+    </script>
+</body>
+</html>
